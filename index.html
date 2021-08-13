@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <title>Tasting Cars</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Keywords" content="Cars">
+    <meta name="Description" content="Tasting the cars">
+    <link rel="icon" href="./assets/img/icon/favicon.ico" type="image/x-icon">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+    <!-- <link rel="stylesheet" href="css/cssreset-min.css" /> -->
+    <link rel="stylesheet" href="./css/style.css">
+    <script type="text/javascript" src="./js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="./js/menu.js"></script>
+</head>
+
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-navbar">
+        <div class="container-fluid d-block">
+            <div class="text-end d-none d-md-block">
+                <button class="btn border border-white ps-4 py-1 text-white" style="border-radius: 0px">
+                    ButtonNavbar
+                    <span class="ms-1">
+                        <img src="./assets/img/icon/arrowButton.png" width="15" alt="">
+                    </span>
+                </button>
+            </div>
+            <div class="d-md-flex w-100 align-items-center justify-content-between">
+                <div class="d-flex justify-content-between">
+                    <a class="navbar-brand navbar-logo " href="#">
+                        <img src="./assets/img/logo/tc-black-logo.svg" width="120" alt="">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="navbar-nav ms-auto mb-2 mt-2 mb-lg-0">
+                        <div class="d-md-none d-block mb-1">
+                            <button class="btn border border-white ps-4 py-1 text-white" style="border-radius: 0px">
+                                ButtonNavbar
+                                <span class="ms-1">
+                                    <img src="./assets/img/icon/arrowButton.png" width="15" alt="">
+                                </span>
+                            </button>
+                        </div>
+                        <hr class="d-md-none" style="height: 1px;">
+                        <li class="nav-item">
+                            <a style="padding: 0px;" class="nav-link text-white mx-md-3 py-1 fw-bold active" href="#">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a style="padding: 0px;" class="nav-link text-white mx-md-3 py-1 fw-bold" href="#">ABOUT US</a>
+                        </li>
+                        <li class="nav-item">
+                            <a style="padding: 0px;" class="nav-link text-white mx-md-3 py-1 fw-bold" href="#">CONTACTS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a style="padding: 0px;" class="nav-link text-white ms-md-3 py-1 fw-bold" href="#">PROJECT PREVIEW</a>
+                        </li>
+                    </ul>
+                   
+                </div>
+            </div>
+            
+
+        </div>
+    </nav>
+    <header>
+        <div id="image-slider" class="splide">
+            <div class="splide__track">
+                <ul class="splide__list" id="slide-show">
+                    <!--car slide show-->
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="container-fluid mt-5">
+        <div class="row g-0 justify-content-center align-items-center my-4" >
+            <div class="col-md-5 mb-0 mb-md-3">
+                <div class="text-center">
+                    <h2>TOYOTA NEW CAR IS COMING!</h2>
+                    <p class="text-grey">Your future car here </p>
+                    <p class="text-grey">Lets Explore!</p>
+                </div>
+            </div>
+        </div>
+
+        
+        <div id="card-slider" class="splide">
+            <div class="splide__track">
+                <ul class="splide__list" id="slide-card">
+                    <!-- card slide -->
+                </ul>
+            </div>
+        </div>
+           
+        <div class="row g-0 justify-content-center mt-5 pt-md-5 pt-0">
+            <div class="col-md-6 p-md-4 p-2">
+                <div class="p-3 shadow-sm" style="background-color: #f7f7f7;">
+                    <h2 class="px-2 text-grey fw-normal">List Car</h2>
+                    <div class="row " id="car-list-transaction">
+                        <!-- car list-->
+                    </div>
+                    <div class="ps-3 my-2 border-start border-2 border-left">
+                        <h5>Select Machine</h5>
+                    </div>
+                    <div class="row">
+                        <div class="d-flex mt-1 mb-3 align-items-center">
+                            <p class="me-4">Select CC</p>
+                            <select class="select-css py-2 px-3 w-50" name="" id="">
+                                <option value="660cc">660cc</option>
+                                <option value="660cc">660cc</option>
+                            </select>
+                        </div>
+                        <div class="d-flex mt-1 mb-3 align-items-center">
+                            <p class="me-4">AT/MT</p>
+                            <div class="btn-group ms-4" role="group" aria-label="Basic radio toggle button group">
+                                <input type="radio" class="btn-check " name="btnradio" id="btnradio1" autocomplete="off" checked>
+                                <label class="btn btn-outline-primary left-rounded-pill px-4"  for="btnradio1">AT</label>
+                                
+                                <input type="radio" class="btn-check " name="btnradio" id="btnradio2" autocomplete="off">
+                                <label class="btn btn-outline-primary right-rounded-pill px-4"  for="btnradio2">MT</label>
+                            </div>
+                        </div>
+                        <div class="text-center my-2">
+                            <button class="btn shadow-sm ps-md-4 ps-3 pe-2 py-2" style="border-radius: 0px; background-color: #66a9cc; color: white;">
+                                Procces
+                                <span class="ms-1">
+                                    <img src="./assets/img/icon/arrowButton.png" width="12" alt="">
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 p-md-4 p-2">
+                <div class="shadow-sm pb-3">
+                    <div class="p-2">
+                        <h2 class="px-2 mb-3 text-grey fw-normal">Transaction Car</h2>
+                        <div class="row justify-content-center">
+                            <div class="px-2 col-md-5 d-flex me-md-2 d-flex align-items-center justify-content-center justify-content-md-start mb-2 mb-md-0">
+                                <p class="me-2">Select Color</p>
+                                <select class="select-css py-2 px-3 w-50"  name="" id="">
+                                    <option value="red">Red</option>
+                                    <option value="blue">Blue</option>
+                                </select>
+                            </div>
+                            <div class="px-2 d-flex col-md-5 d-flex align-items-center justify-content-center justify-content-md-start">
+                                <p class="me-2">Select Color</p>
+                                <select class="select-css py-2 px-3 w-50" name="color"  id="">
+                                    <option value="red">Red</option>
+                                    <option value="blue">Blue</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="trx-car-list" class="p-2 d-flex my-3" style="background-color: #f7f7f7;">
+                        <!-- trx-car -->
+                        
+                    </div>
+                    <div class="px-2">
+                        <div class="ps-3 my-2 border-start border-2 border-left">
+                            <h5>Select Machine</h5>
+                        </div>
+                        <div class="row">
+                            <div class="d-flex mt-1 mb-3 align-items-center">
+                                <p class="me-4">Select CC</p>
+                                <select class="select-css py-2 px-3 w-50" name="cc" id="cc-trx" disabled>
+                                    <option value="660cc">660cc</option>
+                                    <option value="660cc">660cc</option>
+                                </select>
+                            </div>
+                            <div class="d-flex mt-1 mb-3 align-items-center">
+                                <p class="me-4">AT/MT</p>
+                                <div class="btn-group ms-4" role="group" aria-label="Basic radio toggle button group">
+                                    <input type="radio" class="btn-check " name="btnradiotrx" id="btnradio3" autocomplete="off" checked disabled>
+                                    <label class="btn btn-outline-secondary left-rounded-pill px-4" for="btnradio3">AT</label>
+                                    <input type="radio" class="btn-check " name="btnradiotrx" id="btnradio4" autocomplete="off" disabled>
+                                    <label class="btn btn-outline-secondary right-rounded-pill px-4" for="btnradio4">MT</label>
+                                </div>
+                            </div>
+                            <div class="text-center my-2">
+                                <button class="btn shadow-sm ps-md-4 ps-3 pe-md-2 py-md-2" style="border-radius: 0px; background-color: #66a9cc; color: white;">
+                                    Procces Your Car
+                                    <span class="ms-1">
+                                        <img src="./assets/img/icon/arrowButton.png" width="12" alt="">
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-2 mt-4 shadow-sm mt-3">
+                    <h2 class="mb-3 px-2 text-grey fw-normal">Input Message</h2>
+                    <div class="px-md-5 px-3  mb-3">
+                        <input class="form-control" type="text" name="message">
+                    </div>
+                    <div class="text-center mt-2 mb-3">
+                        <button class="btn shadow-sm ps-md-4 ps-3 pe-md-2 py-md-2" style="border-radius: 0px; background-color: #66a9cc; color: white;">
+                            Procces
+                            <span class="ms-1">
+                                <img src="./assets/img/icon/arrowButton.png" width="12" alt="">
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="my-5">
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <h3 style="margin-bottom: 0px;">Agenda</h3>
+                            <a href="#" class="btn btn-primary py-2 px-md-5 px-2" style="background-color: #66a9cc;">
+                                Choose Your Agenda
+                            </a>
+                        </div>
+                        <hr style="background-color: #406a7f!important; height: 5px; margin: 0px;">
+                        <div id="agenda-list">
+                            <!-- agenda list -->
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <footer style="padding: 0px;">
+                <div class="my-2 row justify-content-center p-2"  style="background-color: #66777f;">
+                    <div class="col-md-7 py-2 px-4 d-flex flex-md-row flex-column justify-content-center align-items-end">
+                        <div class="col-md-6 mx-md-0 mx-auto pb-3">
+                            <img class="mb-2" src="./assets/img/logo/tc-white-logo.svg" width="130" alt="">
+                            <p class="text-md-start text-center">08199990000</p>
+                            <p class="text-md-start text-center">Lorem ipsum,</p>
+                            <p class="text-md-start text-center">Lorem ipsum,  </p>
+                        </div>
+                        <div class="border-start border-5 h-100 d-none d-md-block" style="border-color: #406a7f!important;"></div>
+                        <div class="col-md-6 mx-md-0 mx-auto pb-3">
+                            <div class="mt-4 ms-md-3 ms-0 d-flex justify-content-center">
+                                <div class="col-md-4 me-2 mx-auto mx-md-0">
+                                    <p>Company</p>
+                                    <p>Company</p>
+                                    <p>Company</p>
+                                </div>
+                                <div class="col-md-8 mx-md-0 mx-auto">
+                                    <p>Grune Technology</p>
+                                    <p>Grune Technology</p>
+                                    <p>Grune Technology</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center py-2 mt-md-4 mt-2" style="background-color: #cceeff;">
+                    <p class="text-center">CopyLight</p>
+                </div>
+            </footer>
+            <div class="float">
+                <button class="btn rounded-circle" id="toTop">
+                    <img src="./assets/img/icon/backToTop.png" width="50" alt="">
+                </button>
+            </div>
+            
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
+        integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+    <script src="./js/slide-show.js"></script>
+    <script src="./js/card-slide.js"></script>
+    <script src="./js/car-list-transaction.js"></script>
+    <script src="./js/agenda-list.js"></script>
+    <script src="./js/trx-car.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/scroll-to-top.js"></script>
+</body>
+
+</html>
