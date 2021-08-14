@@ -122,6 +122,24 @@
     text-align: center;    
   }
 
+  .pin-check input[type="checkbox"] {
+    display:none;
+  }
+  
+  .pin-check input + label {
+    display: inline-block;	
+    width: 25px;
+    height: 25px;
+    cursor: pointer;	
+    background-image: url('../assets/img/icon/pinUncheck.png');
+    background-size: 25px;
+    background-repeat: no-repeat;
+  }
+
+  .pin-check input[type="checkbox"]:checked + label {
+    background-image: url('../assets/img/icon/pinCheck.png')
+  }
+
   .text-grey {
     color: #95989a;
   }
@@ -161,3 +179,4 @@
           margin-top: 0px;
       }
   }
+

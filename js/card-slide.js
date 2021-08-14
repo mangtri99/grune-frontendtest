@@ -38,9 +38,12 @@ $.each(cars, function(key, value){
                             '<p>'+cars[key].name+'</p>' +
                             '<p>'+cars[key].sku+'</p>'+
                         '</div>'+
-                        '<div class="d-flex px-1 py-2 bg-light justify-content-between align-items-center">'+
+                        '<div class="d-flex p-1 bg-light justify-content-between align-items-center">'+
                             '<div class="card-text">lorem ipsum do</div>'+
-                            '<img src="./assets/img/icon/pin.png" class="ms-2" width="20" alt="">'+
+                            '<div class="pin-check">'+
+                                '<input id="'+ cars[key].name+ '" type="checkbox" name="cars"/>'+
+                                '<label class="ms-md-2 ms-0" for="'+cars[key].name+'"></label>'+
+                            '</div>'+
                         '</div>'+
                     '</div>'+
                     '<div class="text-center my-3">'+
